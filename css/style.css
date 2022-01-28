@@ -1,0 +1,142 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+  --cinza: #aaa;
+  --branco: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+
+body {
+  background: var(--preto);
+  font-family: "Arial", Times, serif;
+  color: var(--branco);
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+header nav a {
+  color: var(--cinza);
+  text-decoration: none;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: var(--branco);
+}
+
+/* Filme Principal */
+
+main .filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../img/megalodon.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+main .filme-principal .container {
+  margin-left: 20px;
+  width: 80%;
+}
+
+main .titulo {
+  margin-top: 15%;
+  font-size: 50px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+main .descricao {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+main .botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: var(--branco);
+  font-weight: 600;
+  font-size: 12px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+main .botao i {
+  margin-right: 5px;
+}
+
+main .botao:hover {
+  background-color: var(--branco);
+  color: var(--preto);
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.corrosel-filmes {
+  margin-top: 10px;
+}
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+.modal-body {
+  position: relative;
+  padding: 0px;
+}
+.btn-close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+}
+
+.corrosel-filmes a {
+  position: relative;
+
+  width: 100%;
+}
+
+.item i {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: var(--branco);
+  font-weight: 600;
+  font-size: 12px;
+  padding: 15px 48%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  
+}
